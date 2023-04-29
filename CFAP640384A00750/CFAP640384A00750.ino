@@ -1,4 +1,4 @@
-﻿//=============================================================================
+//=============================================================================
 // "Arduino" example program for Crystalfontz ePaper. 
 //
 // This project is for the CFAP640384A0-0750 :
@@ -374,8 +374,8 @@ void Load_Flash_Image_To_Display_RAM_RLE(uint16_t width_pixels,
   // This command starts transmitting data and write them into SRAM. To complete
   // data transmission, command DSP (Data transmission Stop) must be issued. Then
   // the chip will start to send data/VCOM for panel.
-  //  * In B/W mode, this command writes “NEW” data to SRAM.
-  //  * In B/W/Red mode, this command writes “Red” data to SRAM.
+  //  * In B/W mode, this command writes âNEWâ data to SRAM.
+  //  * In B/W/Red mode, this command writes âRedâ data to SRAM.
   SPI.transfer(0x10);
   //Pump out the Red data.
   ePaper_DC_1;
